@@ -1,157 +1,103 @@
-/* Global Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-  }
-  
-  body {
-    background-color: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  header {
-    background: #0073e6;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  nav ul li {
-    margin: 0 15px;
-  }
-  
-  nav ul li a, .cta {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .cta {
-    background: white;
-    color: #0073e6;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  .hero {
-    padding: 100px 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
-    color: white;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 2.5em;
-  }
-  
-  .hero p {
-    font-size: 1.2em;
-    margin: 20px 0;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #0073e6;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .mission {
-    background-color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .mission-items {
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .mission .item {
-    flex: 1;
-    margin: 0 10px;
-  }
-  
-  .vision {
-    background-color: #f0f0f0;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .services {
-    background-color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .service-cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-  }
-  
-  .service-cards .card {
-    background-color: #0073e6;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    flex: 1;
-    margin: 0 10px;
-  }
-  
-  .contact {
-    background-color: #f0f0f0;
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  .contact form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .contact label {
-    margin: 10px 0 5px;
-  }
-  
-  .contact input, .contact textarea {
-    padding: 10px;
-    width: 300px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact button {
-    padding: 10px 20px;
-    background-color: #0073e6;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  footer {
-    background-color: #0073e6;
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* Header */
+.header {
+  background-color: #007bff;
+  padding: 1rem 0;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Service Cards */
+.service-card {
+  background-color: white;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQs */
+.faq-item {
+  margin-bottom: 1rem;
+}
+
+.faq-item h3 {
+  font-size: 1.25rem;
+  color: #007bff;
+}
+
+/* Testimonials */
+.testimonial {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-left: 4px solid #007bff;
+  margin-bottom: 1rem;
+}
+
+.testimonial span {
+  display: block;
+  font-style: italic;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.footer-nav a {
+  margin: 0 1rem;
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: white;
+}
+
+
+
