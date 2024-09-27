@@ -1,103 +1,219 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: white;
 }
 
-h1, h2, h3 {
-  color: #333;
-  text-align: center;
-}
-
-/* Header */
-.header {
-  background-color: #007bff;
+/* Navigation */
+nav {
+  background-color: white;
   padding: 1rem 0;
-  color: white;
+  text-align: center;
 }
 
 .nav-links {
-  display: flex;
-  justify-content: center;
   list-style: none;
+  display: inline-block;
+  padding: 0;
 }
 
 .nav-links li {
-  margin: 0 1rem;
+  display: inline;
+  margin: 0 15px;
 }
 
 .nav-links a {
-  color: white;
   text-decoration: none;
+  color: #6B359C;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.section {
-  padding: 4rem 2rem;
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  position: relative;
+  color: #333;
 }
 
-.section h2 {
+.hero-content {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2D2D2D;
+}
+
+.hero-content h1 span {
+  color: #6B359C;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Typing Animation */
+.typewriter::after {
+  content: '|';
+  color: #6B359C;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.services h2 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 30px;
+  color: #333;
 }
 
-/* Service Cards */
-.service-card {
-  background-color: white;
-  padding: 1.5rem;
-  margin: 1rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.service-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-/* FAQs */
+.card {
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #fff;
+}
+
+.card-front {
+  background-color: #6B359C;
+}
+
+.card-back {
+  background-color: #333;
+  transform: rotateY(180deg);
+  color: #fff;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f0f0f0;
+  padding: 50px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 50px;
+  background-color: #fff;
+  text-align: left;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
 .faq-item {
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
 }
 
 .faq-item h3 {
-  font-size: 1.25rem;
-  color: #007bff;
-}
-
-/* Testimonials */
-.testimonial {
-  background-color: #f9f9f9;
-  padding: 1rem;
-  border-left: 4px solid #007bff;
-  margin-bottom: 1rem;
-}
-
-.testimonial span {
-  display: block;
-  font-style: italic;
-  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #6B359C;
 }
 
 /* Footer */
-.footer {
+footer {
   background-color: #333;
-  color: white;
+  color: #fff;
+  padding: 20px;
   text-align: center;
-  padding: 1rem 0;
 }
 
-.footer-nav {
-  display: flex;
-  justify-content: center;
+.footer-content p {
+  margin: 0;
+}
+
+.footer-links {
   list-style: none;
-  margin-top: 1rem;
+  padding: 0;
 }
 
-.footer-nav a {
-  margin: 0 1rem;
-  color: #ddd;
+.footer-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.footer-links a {
   text-decoration: none;
+  color: #fff;
+  font-size: 14px;
 }
 
-.footer-nav a:hover {
-  color: white;
-}
 
 
 
